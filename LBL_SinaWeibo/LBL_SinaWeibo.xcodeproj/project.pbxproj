@@ -12,6 +12,9 @@
 		187D712C1BBC0D35007946B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D712B1BBC0D35007946B7 /* ViewController.m */; };
 		187D712F1BBC0D35007946B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D712D1BBC0D35007946B7 /* Main.storyboard */; };
 		187D71311BBC0D35007946B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D71301BBC0D35007946B7 /* Assets.xcassets */; };
+		187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71781BBC53A8007946B7 /* LBLTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		187D717E1BBC5E4D007946B7 /* LBLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D717D1BBC5E4D007946B7 /* LBLTabBar.m */; settings = {ASSET_TAGS = (); }; };
+		187D71811BBC6099007946B7 /* UIView+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71801BBC6099007946B7 /* UIView+extension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,13 @@
 		187D712E1BBC0D35007946B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187D71301BBC0D35007946B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187D71351BBC0D35007946B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187D71771BBC53A8007946B7 /* LBLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTabBarController.h; sourceTree = "<group>"; };
+		187D71781BBC53A8007946B7 /* LBLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTabBarController.m; sourceTree = "<group>"; };
+		187D717A1BBC5D4E007946B7 /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMe.m; sourceTree = "<group>"; };
+		187D717C1BBC5E4D007946B7 /* LBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTabBar.h; sourceTree = "<group>"; };
+		187D717D1BBC5E4D007946B7 /* LBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTabBar.m; sourceTree = "<group>"; };
+		187D717F1BBC6099007946B7 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
+		187D71801BBC6099007946B7 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		187D71181BBC0D34007946B7 = {
 			isa = PBXGroup;
 			children = (
+				187D717A1BBC5D4E007946B7 /* ReadMe.m */,
 				187D71231BBC0D35007946B7 /* LBL_SinaWeibo */,
 				187D71221BBC0D35007946B7 /* Products */,
 			);
@@ -58,6 +69,12 @@
 			children = (
 				187D71271BBC0D35007946B7 /* AppDelegate.h */,
 				187D71281BBC0D35007946B7 /* AppDelegate.m */,
+				187D71771BBC53A8007946B7 /* LBLTabBarController.h */,
+				187D71781BBC53A8007946B7 /* LBLTabBarController.m */,
+				187D717C1BBC5E4D007946B7 /* LBLTabBar.h */,
+				187D717D1BBC5E4D007946B7 /* LBLTabBar.m */,
+				187D717F1BBC6099007946B7 /* UIView+extension.h */,
+				187D71801BBC6099007946B7 /* UIView+extension.m */,
 				187D712A1BBC0D35007946B7 /* ViewController.h */,
 				187D712B1BBC0D35007946B7 /* ViewController.m */,
 				187D712D1BBC0D35007946B7 /* Main.storyboard */,
@@ -102,6 +119,7 @@
 		187D71191BBC0D34007946B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LBL;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = LBL;
 				TargetAttributes = {
@@ -147,6 +165,9 @@
 			files = (
 				187D712C1BBC0D35007946B7 /* ViewController.m in Sources */,
 				187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */,
+				187D71811BBC6099007946B7 /* UIView+extension.m in Sources */,
+				187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */,
+				187D717E1BBC5E4D007946B7 /* LBLTabBar.m in Sources */,
 				187D71261BBC0D35007946B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

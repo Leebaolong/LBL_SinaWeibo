@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LBLTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -20,12 +21,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     //2.设置根控制器
     //初始化根控制器
-    UITabBarController *tabbar = [[UITabBarController alloc] init];
-    [tabbar addChildViewController:[[UIViewController alloc] init]];
+    
+
+    LBLTabBarController *tabbarCtrl = [[LBLTabBarController alloc] init];
+    
+    
     
     //设置根控制器
     
-    [self.window setRootViewController:tabbar];
+    [self.window setRootViewController:tabbarCtrl];
     //3.显示出来
     [self.window makeKeyAndVisible];
     
