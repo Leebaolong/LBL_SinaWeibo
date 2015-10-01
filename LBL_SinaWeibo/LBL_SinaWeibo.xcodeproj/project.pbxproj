@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		187D71261BBC0D35007946B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71251BBC0D35007946B7 /* main.m */; };
 		187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71281BBC0D35007946B7 /* AppDelegate.m */; };
-		187D712C1BBC0D35007946B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D712B1BBC0D35007946B7 /* ViewController.m */; };
 		187D712F1BBC0D35007946B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D712D1BBC0D35007946B7 /* Main.storyboard */; };
 		187D71311BBC0D35007946B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D71301BBC0D35007946B7 /* Assets.xcassets */; };
 		187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71781BBC53A8007946B7 /* LBLTabBarController.m */; settings = {ASSET_TAGS = (); }; };
@@ -20,6 +19,7 @@
 		18C54B561BBD402700D38815 /* LBLTemp2Ctrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B551BBD402700D38815 /* LBLTemp2Ctrl.m */; settings = {ASSET_TAGS = (); }; };
 		18C54B591BBD49BB00D38815 /* LBLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B581BBD49BB00D38815 /* LBLNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		18C54B5C1BBD710100D38815 /* LBLTemp3Ctrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */; settings = {ASSET_TAGS = (); }; };
+		18C54B5F1BBD7A9200D38815 /* LBLHomeTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B5E1BBD7A9200D38815 /* LBLHomeTitleButton.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,28 +27,29 @@
 		187D71251BBC0D35007946B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187D71271BBC0D35007946B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		187D71281BBC0D35007946B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		187D712A1BBC0D35007946B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		187D712B1BBC0D35007946B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		187D712E1BBC0D35007946B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187D71301BBC0D35007946B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187D71351BBC0D35007946B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		187D71771BBC53A8007946B7 /* LBLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTabBarController.h; sourceTree = "<group>"; };
-		187D71781BBC53A8007946B7 /* LBLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTabBarController.m; sourceTree = "<group>"; };
+		187D71771BBC53A8007946B7 /* LBLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTabBarController.h; path = ../../../LBLTabBarController.h; sourceTree = "<group>"; };
+		187D71781BBC53A8007946B7 /* LBLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTabBarController.m; path = ../../../LBLTabBarController.m; sourceTree = "<group>"; };
 		187D717A1BBC5D4E007946B7 /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMe.m; sourceTree = "<group>"; };
-		187D717C1BBC5E4D007946B7 /* LBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTabBar.h; sourceTree = "<group>"; };
-		187D717D1BBC5E4D007946B7 /* LBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTabBar.m; sourceTree = "<group>"; };
-		187D717F1BBC6099007946B7 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+extension.h"; sourceTree = "<group>"; };
-		187D71801BBC6099007946B7 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+extension.m"; sourceTree = "<group>"; };
-		18C54B4E1BBD34F900D38815 /* LBLHomeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLHomeTableVC.h; sourceTree = "<group>"; };
-		18C54B4F1BBD34F900D38815 /* LBLHomeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLHomeTableVC.m; sourceTree = "<group>"; };
-		18C54B511BBD38C000D38815 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
-		18C54B521BBD38C000D38815 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
-		18C54B541BBD402700D38815 /* LBLTemp2Ctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTemp2Ctrl.h; sourceTree = "<group>"; };
-		18C54B551BBD402700D38815 /* LBLTemp2Ctrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTemp2Ctrl.m; sourceTree = "<group>"; };
-		18C54B571BBD49BB00D38815 /* LBLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLNavigationController.h; sourceTree = "<group>"; };
-		18C54B581BBD49BB00D38815 /* LBLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLNavigationController.m; sourceTree = "<group>"; };
-		18C54B5A1BBD710100D38815 /* LBLTemp3Ctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTemp3Ctrl.h; sourceTree = "<group>"; };
-		18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTemp3Ctrl.m; sourceTree = "<group>"; };
+		187D717C1BBC5E4D007946B7 /* LBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTabBar.h; path = ../../../LBLTabBar.h; sourceTree = "<group>"; };
+		187D717D1BBC5E4D007946B7 /* LBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTabBar.m; path = ../../../LBLTabBar.m; sourceTree = "<group>"; };
+		187D717F1BBC6099007946B7 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+extension.h"; path = "../../../UIView+extension.h"; sourceTree = "<group>"; };
+		187D71801BBC6099007946B7 /* UIView+extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+extension.m"; path = "../../../UIView+extension.m"; sourceTree = "<group>"; };
+		18C54B4E1BBD34F900D38815 /* LBLHomeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLHomeTableVC.h; path = ../../../LBLHomeTableVC.h; sourceTree = "<group>"; };
+		18C54B4F1BBD34F900D38815 /* LBLHomeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLHomeTableVC.m; path = ../../../LBLHomeTableVC.m; sourceTree = "<group>"; };
+		18C54B511BBD38C000D38815 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+Extension.h"; path = "../../../UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		18C54B521BBD38C000D38815 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+Extension.m"; path = "../../../UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		18C54B541BBD402700D38815 /* LBLTemp2Ctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTemp2Ctrl.h; path = ../LBLTemp2Ctrl.h; sourceTree = "<group>"; };
+		18C54B551BBD402700D38815 /* LBLTemp2Ctrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTemp2Ctrl.m; path = ../LBLTemp2Ctrl.m; sourceTree = "<group>"; };
+		18C54B571BBD49BB00D38815 /* LBLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLNavigationController.h; path = ../../../LBLNavigationController.h; sourceTree = "<group>"; };
+		18C54B581BBD49BB00D38815 /* LBLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLNavigationController.m; path = ../../../LBLNavigationController.m; sourceTree = "<group>"; };
+		18C54B5A1BBD710100D38815 /* LBLTemp3Ctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTemp3Ctrl.h; path = ../LBLTemp3Ctrl.h; sourceTree = "<group>"; };
+		18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTemp3Ctrl.m; path = ../LBLTemp3Ctrl.m; sourceTree = "<group>"; };
+		18C54B5D1BBD7A9200D38815 /* LBLHomeTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLHomeTitleButton.h; path = ../../../LBLHomeTitleButton.h; sourceTree = "<group>"; };
+		18C54B5E1BBD7A9200D38815 /* LBLHomeTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLHomeTitleButton.m; path = ../../../LBLHomeTitleButton.m; sourceTree = "<group>"; };
+		18C54B601BBD817900D38815 /* Weibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 				187D717A1BBC5D4E007946B7 /* ReadMe.m */,
 				187D71231BBC0D35007946B7 /* LBL_SinaWeibo */,
 				187D71221BBC0D35007946B7 /* Products */,
+				18C54B7D1BBD8A3100D38815 /* ThirdLib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,30 +84,12 @@
 		187D71231BBC0D35007946B7 /* LBL_SinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				187D71271BBC0D35007946B7 /* AppDelegate.h */,
+				18C54B611BBD86AF00D38815 /* Classes */,
 				187D71281BBC0D35007946B7 /* AppDelegate.m */,
-				187D71771BBC53A8007946B7 /* LBLTabBarController.h */,
-				187D71781BBC53A8007946B7 /* LBLTabBarController.m */,
-				187D717C1BBC5E4D007946B7 /* LBLTabBar.h */,
-				187D717D1BBC5E4D007946B7 /* LBLTabBar.m */,
-				187D717F1BBC6099007946B7 /* UIView+extension.h */,
-				187D71801BBC6099007946B7 /* UIView+extension.m */,
-				18C54B511BBD38C000D38815 /* UIBarButtonItem+Extension.h */,
-				18C54B521BBD38C000D38815 /* UIBarButtonItem+Extension.m */,
-				18C54B4E1BBD34F900D38815 /* LBLHomeTableVC.h */,
-				18C54B4F1BBD34F900D38815 /* LBLHomeTableVC.m */,
-				18C54B571BBD49BB00D38815 /* LBLNavigationController.h */,
-				18C54B581BBD49BB00D38815 /* LBLNavigationController.m */,
-				187D712A1BBC0D35007946B7 /* ViewController.h */,
-				187D712B1BBC0D35007946B7 /* ViewController.m */,
+				187D71271BBC0D35007946B7 /* AppDelegate.h */,
 				187D712D1BBC0D35007946B7 /* Main.storyboard */,
-				187D71301BBC0D35007946B7 /* Assets.xcassets */,
-				187D71351BBC0D35007946B7 /* Info.plist */,
 				187D71241BBC0D35007946B7 /* Supporting Files */,
-				18C54B541BBD402700D38815 /* LBLTemp2Ctrl.h */,
-				18C54B551BBD402700D38815 /* LBLTemp2Ctrl.m */,
-				18C54B5A1BBD710100D38815 /* LBLTemp3Ctrl.h */,
-				18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */,
+				18C54B601BBD817900D38815 /* Weibo.pch */,
 			);
 			path = LBL_SinaWeibo;
 			sourceTree = "<group>";
@@ -113,9 +97,252 @@
 		187D71241BBC0D35007946B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				187D71351BBC0D35007946B7 /* Info.plist */,
+				187D71301BBC0D35007946B7 /* Assets.xcassets */,
 				187D71251BBC0D35007946B7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18C54B611BBD86AF00D38815 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B781BBD88C900D38815 /* Public */,
+				18C54B761BBD872B00D38815 /* Temp */,
+				18C54B621BBD86AF00D38815 /* Compose */,
+				18C54B661BBD86AF00D38815 /* Discover */,
+				18C54B6A1BBD86AF00D38815 /* Home */,
+				18C54B6E1BBD86AF00D38815 /* Message */,
+				18C54B721BBD86AF00D38815 /* Profile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18C54B621BBD86AF00D38815 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B631BBD86AF00D38815 /* Controller */,
+				18C54B641BBD86AF00D38815 /* Model */,
+				18C54B651BBD86AF00D38815 /* View */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		18C54B631BBD86AF00D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B641BBD86AF00D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B651BBD86AF00D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B661BBD86AF00D38815 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B671BBD86AF00D38815 /* Controller */,
+				18C54B681BBD86AF00D38815 /* Model */,
+				18C54B691BBD86AF00D38815 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		18C54B671BBD86AF00D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B681BBD86AF00D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B691BBD86AF00D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B6A1BBD86AF00D38815 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B6B1BBD86AF00D38815 /* Controller */,
+				18C54B6C1BBD86AF00D38815 /* Model */,
+				18C54B6D1BBD86AF00D38815 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18C54B6B1BBD86AF00D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B4E1BBD34F900D38815 /* LBLHomeTableVC.h */,
+				18C54B4F1BBD34F900D38815 /* LBLHomeTableVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B6C1BBD86AF00D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B6D1BBD86AF00D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B5D1BBD7A9200D38815 /* LBLHomeTitleButton.h */,
+				18C54B5E1BBD7A9200D38815 /* LBLHomeTitleButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B6E1BBD86AF00D38815 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B6F1BBD86AF00D38815 /* Controller */,
+				18C54B701BBD86AF00D38815 /* Model */,
+				18C54B711BBD86AF00D38815 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		18C54B6F1BBD86AF00D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B701BBD86AF00D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B711BBD86AF00D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B721BBD86AF00D38815 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B731BBD86AF00D38815 /* Controller */,
+				18C54B741BBD86AF00D38815 /* Model */,
+				18C54B751BBD86AF00D38815 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18C54B731BBD86AF00D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B741BBD86AF00D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B751BBD86AF00D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B761BBD872B00D38815 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B541BBD402700D38815 /* LBLTemp2Ctrl.h */,
+				18C54B551BBD402700D38815 /* LBLTemp2Ctrl.m */,
+				18C54B5A1BBD710100D38815 /* LBLTemp3Ctrl.h */,
+				18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */,
+			);
+			name = Temp;
+			sourceTree = "<group>";
+		};
+		18C54B781BBD88C900D38815 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				18C54B791BBD88C900D38815 /* Category */,
+				18C54B7A1BBD88C900D38815 /* Controller */,
+				18C54B7B1BBD88C900D38815 /* Model */,
+				18C54B7C1BBD88C900D38815 /* View */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		18C54B791BBD88C900D38815 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				187D717F1BBC6099007946B7 /* UIView+extension.h */,
+				187D71801BBC6099007946B7 /* UIView+extension.m */,
+				18C54B511BBD38C000D38815 /* UIBarButtonItem+Extension.h */,
+				18C54B521BBD38C000D38815 /* UIBarButtonItem+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18C54B7A1BBD88C900D38815 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				187D71771BBC53A8007946B7 /* LBLTabBarController.h */,
+				187D71781BBC53A8007946B7 /* LBLTabBarController.m */,
+				18C54B571BBD49BB00D38815 /* LBLNavigationController.h */,
+				18C54B581BBD49BB00D38815 /* LBLNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18C54B7B1BBD88C900D38815 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18C54B7C1BBD88C900D38815 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				187D717C1BBC5E4D007946B7 /* LBLTabBar.h */,
+				187D717D1BBC5E4D007946B7 /* LBLTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18C54B7D1BBD8A3100D38815 /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdLib;
+			path = LBL_SinaWeibo/ThirdLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187D712C1BBC0D35007946B7 /* ViewController.m in Sources */,
 				187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */,
 				187D71811BBC6099007946B7 /* UIView+extension.m in Sources */,
 				187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */,
@@ -196,6 +422,7 @@
 				187D717E1BBC5E4D007946B7 /* LBLTabBar.m in Sources */,
 				18C54B591BBD49BB00D38815 /* LBLNavigationController.m in Sources */,
 				187D71261BBC0D35007946B7 /* main.m in Sources */,
+				18C54B5F1BBD7A9200D38815 /* LBLHomeTitleButton.m in Sources */,
 				18C54B501BBD34F900D38815 /* LBLHomeTableVC.m in Sources */,
 				18C54B5C1BBD710100D38815 /* LBLTemp3Ctrl.m in Sources */,
 				18C54B561BBD402700D38815 /* LBLTemp2Ctrl.m in Sources */,
@@ -301,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LBL_SinaWeibo/Weibo.pch";
 				INFOPLIST_FILE = LBL_SinaWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -314,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LBL_SinaWeibo/Weibo.pch";
 				INFOPLIST_FILE = LBL_SinaWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

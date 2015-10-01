@@ -9,9 +9,11 @@
 #import "LBLHomeTableVC.h"
 #import "UIBarButtonItem+Extension.h"
 #import "LBLTemp2Ctrl.h"
+#import "LBLHomeTitleButton.h"
 
 @interface LBLHomeTableVC ()
 
+@property (nonatomic,strong) LBLHomeTitleButton *titleButton;
 @end
 
 @implementation LBLHomeTableVC
@@ -30,8 +32,28 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_friendsearch" higtImage:@"navigationbar_friendsearch_highlighted" target:self action:@selector(friendsearch:)];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_pop" higtImage:@"navigationbar_pop_highlighted" target:self action:@selector(pop:)];
+    
+    LBLHomeTitleButton *titleButton = [[LBLHomeTitleButton alloc] init];
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    
+    //titleButton.size = CGSizeMake(100, 50);
+    [titleButton sizeToFit];
+    
+    self.navigationItem.titleView = titleButton;
 
+    self.titleButton = titleButton;
 }
+
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.titleButton setTitle:@"呜呜呜" forState:UIControlStateNormal];
+}
+
+
 
 #pragma mark - Table view data source
 
