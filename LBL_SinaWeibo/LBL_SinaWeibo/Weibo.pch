@@ -20,6 +20,8 @@
 
 #import "UIView+extension.h"
 
+#import "UIView+Inspectable.h"
 
+#import "UIBarButtonItem+Extension.h"
 
 #endif /* Weibo_pch */

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186BCEBE1BBD9FA20042ACB7 /* UIView+Inspectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BCEBD1BBD9FA20042ACB7 /* UIView+Inspectable.m */; settings = {ASSET_TAGS = (); }; };
+		186BCEC11BBDA18F0042ACB7 /* LBLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BCEC01BBDA18F0042ACB7 /* LBLTextField.m */; settings = {ASSET_TAGS = (); }; };
 		187D71261BBC0D35007946B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71251BBC0D35007946B7 /* main.m */; };
 		187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71281BBC0D35007946B7 /* AppDelegate.m */; };
 		187D712F1BBC0D35007946B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D712D1BBC0D35007946B7 /* Main.storyboard */; };
@@ -20,9 +22,16 @@
 		18C54B591BBD49BB00D38815 /* LBLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B581BBD49BB00D38815 /* LBLNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 		18C54B5C1BBD710100D38815 /* LBLTemp3Ctrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B5B1BBD710100D38815 /* LBLTemp3Ctrl.m */; settings = {ASSET_TAGS = (); }; };
 		18C54B5F1BBD7A9200D38815 /* LBLHomeTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B5E1BBD7A9200D38815 /* LBLHomeTitleButton.m */; settings = {ASSET_TAGS = (); }; };
+		18C54B801BBD8D1200D38815 /* LBLSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B7F1BBD8D1200D38815 /* LBLSearch.m */; settings = {ASSET_TAGS = (); }; };
+		18C54B821BBD8D4700D38815 /* LBLSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C54B811BBD8D4700D38815 /* LBLSearch.xib */; settings = {ASSET_TAGS = (); }; };
+		18C54B881BBD939C00D38815 /* LBLDiscoverTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C54B871BBD939C00D38815 /* LBLDiscoverTableVC.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186BCEBC1BBD9FA20042ACB7 /* UIView+Inspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Inspectable.h"; sourceTree = "<group>"; };
+		186BCEBD1BBD9FA20042ACB7 /* UIView+Inspectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Inspectable.m"; sourceTree = "<group>"; };
+		186BCEBF1BBDA18F0042ACB7 /* LBLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLTextField.h; sourceTree = "<group>"; };
+		186BCEC01BBDA18F0042ACB7 /* LBLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLTextField.m; sourceTree = "<group>"; };
 		187D71211BBC0D35007946B7 /* LBL_SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBL_SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D71251BBC0D35007946B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		187D71271BBC0D35007946B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +59,11 @@
 		18C54B5D1BBD7A9200D38815 /* LBLHomeTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLHomeTitleButton.h; path = ../../../LBLHomeTitleButton.h; sourceTree = "<group>"; };
 		18C54B5E1BBD7A9200D38815 /* LBLHomeTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLHomeTitleButton.m; path = ../../../LBLHomeTitleButton.m; sourceTree = "<group>"; };
 		18C54B601BBD817900D38815 /* Weibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weibo.pch; sourceTree = "<group>"; };
+		18C54B7E1BBD8D1200D38815 /* LBLSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLSearch.h; sourceTree = "<group>"; };
+		18C54B7F1BBD8D1200D38815 /* LBLSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLSearch.m; sourceTree = "<group>"; };
+		18C54B811BBD8D4700D38815 /* LBLSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LBLSearch.xib; sourceTree = "<group>"; };
+		18C54B861BBD939C00D38815 /* LBLDiscoverTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLDiscoverTableVC.h; sourceTree = "<group>"; };
+		18C54B871BBD939C00D38815 /* LBLDiscoverTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLDiscoverTableVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +176,8 @@
 		18C54B671BBD86AF00D38815 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18C54B861BBD939C00D38815 /* LBLDiscoverTableVC.h */,
+				18C54B871BBD939C00D38815 /* LBLDiscoverTableVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -176,6 +192,11 @@
 		18C54B691BBD86AF00D38815 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18C54B7E1BBD8D1200D38815 /* LBLSearch.h */,
+				18C54B7F1BBD8D1200D38815 /* LBLSearch.m */,
+				18C54B811BBD8D4700D38815 /* LBLSearch.xib */,
+				186BCEBF1BBDA18F0042ACB7 /* LBLTextField.h */,
+				186BCEC01BBDA18F0042ACB7 /* LBLTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +327,8 @@
 				187D71801BBC6099007946B7 /* UIView+extension.m */,
 				18C54B511BBD38C000D38815 /* UIBarButtonItem+Extension.h */,
 				18C54B521BBD38C000D38815 /* UIBarButtonItem+Extension.m */,
+				186BCEBC1BBD9FA20042ACB7 /* UIView+Inspectable.h */,
+				186BCEBD1BBD9FA20042ACB7 /* UIView+Inspectable.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -403,6 +426,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C54B821BBD8D4700D38815 /* LBLSearch.xib in Resources */,
 				187D71311BBC0D35007946B7 /* Assets.xcassets in Resources */,
 				187D712F1BBC0D35007946B7 /* Main.storyboard in Resources */,
 			);
@@ -417,15 +441,19 @@
 			files = (
 				187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */,
 				187D71811BBC6099007946B7 /* UIView+extension.m in Sources */,
+				18C54B881BBD939C00D38815 /* LBLDiscoverTableVC.m in Sources */,
 				187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */,
+				186BCEC11BBDA18F0042ACB7 /* LBLTextField.m in Sources */,
 				18C54B531BBD38C000D38815 /* UIBarButtonItem+Extension.m in Sources */,
 				187D717E1BBC5E4D007946B7 /* LBLTabBar.m in Sources */,
 				18C54B591BBD49BB00D38815 /* LBLNavigationController.m in Sources */,
+				18C54B801BBD8D1200D38815 /* LBLSearch.m in Sources */,
 				187D71261BBC0D35007946B7 /* main.m in Sources */,
 				18C54B5F1BBD7A9200D38815 /* LBLHomeTitleButton.m in Sources */,
 				18C54B501BBD34F900D38815 /* LBLHomeTableVC.m in Sources */,
 				18C54B5C1BBD710100D38815 /* LBLTemp3Ctrl.m in Sources */,
 				18C54B561BBD402700D38815 /* LBLTemp2Ctrl.m in Sources */,
+				186BCEBE1BBD9FA20042ACB7 /* UIView+Inspectable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

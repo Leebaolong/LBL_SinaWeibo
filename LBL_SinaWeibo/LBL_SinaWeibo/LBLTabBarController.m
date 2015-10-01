@@ -10,6 +10,7 @@
 #import "LBLTabBar.h"
 #import "LBLHomeTableVC.h"
 #import "LBLNavigationController.h"
+#import "LBLDiscoverTableVC.h"
 
 @interface LBLTabBarController ()<LBLTabBarDelegate>
 
@@ -39,7 +40,7 @@
     
     [self addChildViewControllerWithTitle:@"消息" image:@"tabbar_message_center" ctrl:Message];
     
-    UIViewController *Discover = [[UIViewController alloc] init];
+    LBLDiscoverTableVC *Discover = [[LBLDiscoverTableVC alloc] init];
     
     [self addChildViewControllerWithTitle:@"发现" image:@"tabbar_discover" ctrl:Discover];
     
