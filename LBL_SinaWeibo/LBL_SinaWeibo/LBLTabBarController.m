@@ -8,6 +8,8 @@
 
 #import "LBLTabBarController.h"
 #import "LBLTabBar.h"
+#import "LBLHomeTableVC.h"
+#import "LBLNavigationController.h"
 
 @interface LBLTabBarController ()<LBLTabBarDelegate>
 
@@ -26,7 +28,7 @@
     
     
     
-    UIViewController *Home = [[UIViewController alloc] init];
+    LBLHomeTableVC *Home = [[LBLHomeTableVC alloc] init];
 
     
     
@@ -67,16 +69,20 @@
     
     
     //标题
-    ctrl.tabBarItem.title = title;
+//    ctrl.tabBarItem.title = title;
+//    
+//    ctrl.navigationItem.title = title;
+    ctrl.title = title;
+    
     //初始化文字属性
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     dict[NSForegroundColorAttributeName] = [UIColor orangeColor];
     //标题文字属性
     [ctrl.tabBarItem setTitleTextAttributes:dict forState:UIControlStateSelected];
+    LBLNavigationController *navCtrl = [[LBLNavigationController alloc] initWithRootViewController:ctrl];
     
     
-    
-    [self addChildViewController:ctrl];
+    [self addChildViewController:navCtrl];
     
 }
 
