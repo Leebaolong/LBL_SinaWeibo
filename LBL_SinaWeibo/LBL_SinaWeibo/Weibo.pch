@@ -19,18 +19,19 @@
 
 
 #import "UIView+extension.h"
-
 #import "UIView+Inspectable.h"
-
 #import "UIBarButtonItem+Extension.h"
+#import "LBLUtils.h"
+
 
 //屏幕宽高
 #define SCREENW [UIScreen mainScreen].bounds.size.width
 #define SCREENH [UIScreen mainScreen].bounds.size.height
 
 
+//版本号保存的key
 
-
+#define KEY_VERSION @"CFBundleShortVersionString"
 
 
 

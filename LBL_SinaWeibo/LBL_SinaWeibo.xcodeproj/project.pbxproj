@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18102BBF1BBF9B4000CC072F /* LBLNewFeaturesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18102BBE1BBF9B4000CC072F /* LBLNewFeaturesController.m */; settings = {ASSET_TAGS = (); }; };
+		18102BC31BBFAE7A00CC072F /* LBLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18102BC21BBFAE7A00CC072F /* LBLUtils.m */; settings = {ASSET_TAGS = (); }; };
 		186BCEBE1BBD9FA20042ACB7 /* UIView+Inspectable.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BCEBD1BBD9FA20042ACB7 /* UIView+Inspectable.m */; settings = {ASSET_TAGS = (); }; };
 		186BCEC11BBDA18F0042ACB7 /* LBLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186BCEC01BBDA18F0042ACB7 /* LBLTextField.m */; settings = {ASSET_TAGS = (); }; };
 		187D71261BBC0D35007946B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D71251BBC0D35007946B7 /* main.m */; };
@@ -29,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18102BBD1BBF9B4000CC072F /* LBLNewFeaturesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLNewFeaturesController.h; sourceTree = "<group>"; };
+		18102BBE1BBF9B4000CC072F /* LBLNewFeaturesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLNewFeaturesController.m; sourceTree = "<group>"; };
+		18102BC11BBFAE7A00CC072F /* LBLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLUtils.h; sourceTree = "<group>"; };
+		18102BC21BBFAE7A00CC072F /* LBLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLUtils.m; sourceTree = "<group>"; };
+		18102BC61BBFB25D00CC072F /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMe.m; sourceTree = "<group>"; };
 		186BCEBC1BBD9FA20042ACB7 /* UIView+Inspectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Inspectable.h"; sourceTree = "<group>"; };
 		186BCEBD1BBD9FA20042ACB7 /* UIView+Inspectable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Inspectable.m"; sourceTree = "<group>"; };
 		186BCEBF1BBDA18F0042ACB7 /* LBLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTextField.h; path = ../../Discover/View/LBLTextField.h; sourceTree = "<group>"; };
@@ -42,7 +49,6 @@
 		187D71351BBC0D35007946B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187D71771BBC53A8007946B7 /* LBLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTabBarController.h; path = ../../../LBLTabBarController.h; sourceTree = "<group>"; };
 		187D71781BBC53A8007946B7 /* LBLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTabBarController.m; path = ../../../LBLTabBarController.m; sourceTree = "<group>"; };
-		187D717A1BBC5D4E007946B7 /* ReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadMe.m; sourceTree = "<group>"; };
 		187D717C1BBC5E4D007946B7 /* LBLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLTabBar.h; path = ../../../LBLTabBar.h; sourceTree = "<group>"; };
 		187D717D1BBC5E4D007946B7 /* LBLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLTabBar.m; path = ../../../LBLTabBar.m; sourceTree = "<group>"; };
 		187D717F1BBC6099007946B7 /* UIView+extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+extension.h"; path = "../../../UIView+extension.h"; sourceTree = "<group>"; };
@@ -80,10 +86,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18102BB91BBF9AD900CC072F /* NewFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				18102BBA1BBF9AD900CC072F /* Controller */,
+				18102BBB1BBF9AD900CC072F /* Model */,
+				18102BBC1BBF9AD900CC072F /* View */,
+			);
+			path = NewFeatures;
+			sourceTree = "<group>";
+		};
+		18102BBA1BBF9AD900CC072F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18102BBD1BBF9B4000CC072F /* LBLNewFeaturesController.h */,
+				18102BBE1BBF9B4000CC072F /* LBLNewFeaturesController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18102BBB1BBF9AD900CC072F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18102BBC1BBF9AD900CC072F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18102BC01BBFAE5100CC072F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				18102BC11BBFAE7A00CC072F /* LBLUtils.h */,
+				18102BC21BBFAE7A00CC072F /* LBLUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		187D71181BBC0D34007946B7 = {
 			isa = PBXGroup;
 			children = (
-				187D717A1BBC5D4E007946B7 /* ReadMe.m */,
+				18102BC61BBFB25D00CC072F /* ReadMe.m */,
 				187D71231BBC0D35007946B7 /* LBL_SinaWeibo */,
 				187D71221BBC0D35007946B7 /* Products */,
 				18C54B7D1BBD8A3100D38815 /* ThirdLib */,
@@ -124,6 +172,7 @@
 		18C54B611BBD86AF00D38815 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18102BB91BBF9AD900CC072F /* NewFeatures */,
 				18C54B781BBD88C900D38815 /* Public */,
 				18C54B761BBD872B00D38815 /* Temp */,
 				18C54B621BBD86AF00D38815 /* Compose */,
@@ -310,6 +359,7 @@
 		18C54B781BBD88C900D38815 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				18102BC01BBFAE5100CC072F /* Utils */,
 				18C54B791BBD88C900D38815 /* Category */,
 				18C54B7A1BBD88C900D38815 /* Controller */,
 				18C54B7B1BBD88C900D38815 /* Model */,
@@ -446,6 +496,7 @@
 			files = (
 				187D71291BBC0D35007946B7 /* AppDelegate.m in Sources */,
 				187D71811BBC6099007946B7 /* UIView+extension.m in Sources */,
+				18102BC31BBFAE7A00CC072F /* LBLUtils.m in Sources */,
 				18C54B881BBD939C00D38815 /* LBLDiscoverTableVC.m in Sources */,
 				187D71791BBC53A8007946B7 /* LBLTabBarController.m in Sources */,
 				186BCEC11BBDA18F0042ACB7 /* LBLTextField.m in Sources */,
@@ -459,6 +510,7 @@
 				18C54B501BBD34F900D38815 /* LBLHomeTableVC.m in Sources */,
 				18C54B5C1BBD710100D38815 /* LBLTemp3Ctrl.m in Sources */,
 				18C54B561BBD402700D38815 /* LBLTemp2Ctrl.m in Sources */,
+				18102BBF1BBF9B4000CC072F /* LBLNewFeaturesController.m in Sources */,
 				186BCEBE1BBD9FA20042ACB7 /* UIView+Inspectable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

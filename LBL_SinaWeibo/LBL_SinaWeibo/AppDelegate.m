@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LBLTabBarController.h"
+#import "LBLNewFeaturesController.h"
 
 @interface AppDelegate ()
 
@@ -23,13 +24,16 @@
     //初始化根控制器
     
 
-    LBLTabBarController *tabbarCtrl = [[LBLTabBarController alloc] init];
+   // LBLTabBarController *tabbarCtrl = [[LBLTabBarController alloc] init];
     
     
     
     //设置根控制器
     
-    [self.window setRootViewController:tabbarCtrl];
+    //[self.window setRootViewController:tabbarCtrl];
+    
+    [self.window setRootViewController:[LBLNewFeaturesController new]];
+    
     //3.显示出来
     [self.window makeKeyAndVisible];
     

@@ -15,11 +15,7 @@
 
  >迭代 (迭代开发)
 
-2.复习方式
-    >我们要做什么
-    >多敲代码，多看笔记
-
-3.新浪微博
+2..新浪微博
     >写什么功能-->照着做
     >切图从哪儿来-->从新浪微博里面扒出来
 
@@ -54,6 +50,30 @@
             其修饰的变量可以直接在xib右边的控制面板显示
         >IB_DESIGNABLE:
             其用于修饰View，可以动态在xib里面更新出实时的效果
+
+补充：
+initWithFrame-->跟xib没关系，调用alloc->init->一定会执行这个方法
+
+initWithCoder-->如果当前View是从xib里面加载的话，这个方法一定会回调
+awakeFromNib-->xib里面的子控件连接完成。
+1.首页PopView实现
+>整个View是继承于可点击的Button
+>传入自定义View进去显示。
+>小黑框的大小是由传入的View决定的
+>注意：设置整个View的alpha与设置View背景颜色的alpha是不一样的
+*设置整个View的alpha，如果alpha小于0.01的话是不可是点击的
+*设置这个View背景颜色的alpha为0的话，是可以接收点击事件的
+>获取某个控件在窗口中的位置
+self.showWithView:需要转换的View
+*用这个控件的frame去转换，frame是相对于父控件来说的，那个convertCGRect这个方法就用父控件来调用
+CGRect frame = [self.showWithView.superView convertRect:self.showWithView.frame toView:[UIApplication sharedApplication].keyWindow];
+*用这个控件的bounds去转换的话-->bounds是相对于他自己来说的，所以convertCGRect就是自己去调用：
+CGRect frame = [self.showWithView convertRect:self.showWithView.bounds toView:[UIApplication sharedApplication].keyWindow];
+
+
+2.新特性页
+用于软件第一次启动或者新版本更新完成第一次启动显示的一个app功能介绍的这么一个页面
+当前版本只显示一次
 
 
 
