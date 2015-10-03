@@ -10,6 +10,7 @@
 #import "UIBarButtonItem+Extension.h"
 #import "LBLTemp2Ctrl.h"
 #import "LBLHomeTitleButton.h"
+#import "LBLPopView.h"
 
 @interface LBLHomeTableVC ()
 
@@ -37,8 +38,13 @@
     [titleButton setTitle:@"首页" forState:UIControlStateNormal];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
     
-    //titleButton.size = CGSizeMake(100, 50);
+    titleButton.size = CGSizeMake(100, 50);
     [titleButton sizeToFit];
+    
+    //添加点击事件
+    [titleButton addTarget:self action:@selector(showPopView:) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     
     self.navigationItem.titleView = titleButton;
 
@@ -77,6 +83,23 @@
 
 
 #pragma mark - 导航栏按钮点击调用方法
+
+
+- (void)showPopView:(LBLHomeTitleButton *)button{
+    //定义customView
+    UIView *customView = [[UIView alloc] init];
+    customView.size = CGSizeMake(100, 100);
+    customView.backgroundColor = [UIColor redColor];
+    
+    LBLPopView *popView = [[LBLPopView alloc] initWithCustomView:customView showWithView:button];
+    
+    //添加到window
+    
+    [popView show];
+   
+}
+
+
 - (void)friendsearch:(UIButton *)btn
 {
     NSLog(@"%s",__func__);

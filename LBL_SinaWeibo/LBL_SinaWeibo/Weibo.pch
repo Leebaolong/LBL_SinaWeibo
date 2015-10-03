@@ -24,4 +24,20 @@
 
 #import "UIBarButtonItem+Extension.h"
 
+//屏幕宽高
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+
+
+
+
+
+
+
+
+
+
+
+
+
 #endif /* Weibo_pch */
