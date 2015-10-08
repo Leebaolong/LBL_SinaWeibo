@@ -76,5 +76,20 @@ CGRect frame = [self.showWithView convertRect:self.showWithView.bounds toView:[U
 当前版本只显示一次
 
 
+3.OAuth2.0 授权设置编辑
+授权回调页：http://www.baidu.com/
+取消授权回调页：http://www.baidu.com/
+App Key：1147015486
+App Secret：b93d7f956b74dcb38af2ff8d57f90bde
+添加测试账号:追梦痞子Lee_
 
+OAuth2的authorize接口
+URL
+https://api.weibo.com/oauth2/authorize?client_id=1147015486&redirect_uri=http://www.baidu.com/
+
+HTTP请求方式
+GET/POST
+请求参数
+    client_id	    true	string	申请应用时分配的AppKey。
+    redirect_uri	true	string	授权回调地址，站外应用需与设置的回调地址一致，站内应用需填写canvas page的地址。
 

@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "LBLTabBarController.h"
 #import "LBLNewFeaturesController.h"
+#import "LBLOAuthViewController.h"
+#import "LBLAccount.h"
+#import "LBLAccountTool.h"
+#import "UIWindow+SwitchRootviewCtrl.h"
 
 @interface AppDelegate ()
 
@@ -18,10 +22,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //解档
+//    LBLAccount *account = [LBLAccountTool account];
+//    
+//    if (account) {
+//        
+//    }
+    
+    
+    
+    
 //初始化一个window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    //2.设置根控制器
-    //初始化根控制器
     
 
    // LBLTabBarController *tabbarCtrl = [[LBLTabBarController alloc] init];
@@ -30,9 +43,9 @@
     
     //设置根控制器
     
-    //[self.window setRootViewController:tabbarCtrl];
+    [self setRootViewCtrlWithWindow:self.window];
     
-    [self.window setRootViewController:[LBLNewFeaturesController new]];
+    //[self.window setRootViewController:[LBLOAuthViewController new]];
     
     //3.显示出来
     [self.window makeKeyAndVisible];
@@ -44,6 +57,26 @@
     
     return YES;
 }
+
+- (void)setRootViewCtrlWithWindow:(UIWindow *)window{
+    
+    //判断保存得版本号
+    CGFloat currentVersion = [LBLUtils appVersion];
+    CGFloat saveVersion = [[NSUserDefaults standardUserDefaults] doubleForKey:KEY_VERSION];
+    if (saveVersion == 0) {
+        //进入新特性
+        [self.window setRootViewController:[LBLNewFeaturesController new]];
+    }else{
+        //版本号对比
+        if (currentVersion>saveVersion) {
+            [self.window setRootViewController:[LBLNewFeaturesController new]];
+        }else{
+            //是否登陆
+            [window switchRootviewCtrl];
+        }
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

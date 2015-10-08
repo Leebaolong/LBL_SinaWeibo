@@ -11,21 +11,75 @@
 #import "LBLTemp2Ctrl.h"
 #import "LBLHomeTitleButton.h"
 #import "LBLPopView.h"
+#import "LBLAccount.h"
+#import "LBLAccountTool.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "LBLStatus.h"
+#import "LBLLoadMoreView.h"
 
+
+static NSString *indentifier = @"cell";
+
+#define LOAD_COUNT 20
 @interface LBLHomeTableVC ()
 
+
 @property (nonatomic,strong) LBLHomeTitleButton *titleButton;
+
+//装LBLStatus对象
+@property (nonatomic,strong) NSMutableArray *statuses;
+
 @end
 
 @implementation LBLHomeTableVC
 
+- (NSMutableArray *)statuses
+{
+    if (!_statuses) {
+        _statuses = [NSMutableArray array];
+    }
+    return _statuses;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //去掉横线
+//    UIView *view = [[UIView alloc] init];
+//    view.height = -1;
+//    [self.tableView setTableFooterView:view];
+    
+    //告诉tableView，我这个里面的cell是哪一个类型的cell，去从缓存里面取的identifier是什么
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:indentifier];
+
+    
+    //设置刷新
+    [self setUpRefreshView];
+    
     
     [self setNav];
     
-    
+    //加载最新数据
+   // [self loadNewStatuses:];
 }
+//添加刷新控制
+- (void)setUpRefreshView{
+    //初始化刷新控件
+    UIRefreshControl *rereshCtrl = [[UIRefreshControl alloc] init];
+    //监听rereshCtrl值改变
+    [rereshCtrl addTarget:self action:@selector(loadNewStatuses:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:rereshCtrl];
+    
+    //开始刷新
+    [rereshCtrl beginRefreshing];
+    [self loadNewStatuses:rereshCtrl];
+    
+    //添加上拉加载数据
+    LBLLoadMoreView *loadMoreView = [LBLLoadMoreView loadMoreView];
+    self.tableView.tableFooterView = loadMoreView;
+}
+
+
 
 //设置导航栏按钮
 - (void)setNav{
@@ -64,25 +118,66 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.statuses.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+    cell.textLabel.text = [self.statuses[indexPath.row] text];
     
     // Configure the cell...
     
     return cell;
 }
-*/
+#pragma mark - scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"%f",scrollView.contentOffset.y);
+}
 
 
-#pragma mark - 导航栏按钮点击调用方法
+
+#pragma mark - 私有方法
+/**
+ *  加载微博数据
+ */
+- (void)loadNewStatuses:(UIRefreshControl *)refreshCtrl{
+    //定义请求地址
+    NSString *urlStr = @"https://api.weibo.com/2/statuses/home_timeline.json";
+    
+    //拼接参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [LBLAccountTool account].access_token;
+    //刷新微博 判断是否有微博 有 把第一条微博id 作为since_id 参数传入 刷新数据不重复
+    if (self.statuses.count>0) {
+        LBLStatus *status = [self.statuses firstObject];
+        params[@"since_id"] = @(status.id);
+    }
+    params[@"count"] = @(LOAD_COUNT);
+    
+    //NSLog(@"%@",[LBLAccountTool account].access_token);
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager GET:urlStr parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"请求成功%@",responseObject);
+        
+        [refreshCtrl endRefreshing];
+        NSArray *statuses = [LBLStatus objectArrayWithKeyValuesArray:responseObject[@"statuses"]];
+        [_statuses addObjectsFromArray:statuses];
+        [self.tableView reloadData];
+        
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [refreshCtrl endRefreshing];
+        NSLog(@"请求失败 :%@",error);
+    }];
+    
+}
 
 
 - (void)showPopView:(LBLHomeTitleButton *)button{

@@ -8,6 +8,7 @@
 
 #import "LBLNewFeaturesController.h"
 #import "LBLTabBarController.h"
+#import "UIWindow+SwitchRootviewCtrl.h"
 
 #define kPageCount 4
 
@@ -134,12 +135,11 @@
     
     
     //进入主页
-    LBLTabBarController *tabBarCtrl = [[LBLTabBarController alloc] init];
+    //LBLTabBarController *tabBarCtrl = [[LBLTabBarController alloc] init];
     
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
-    
-    [window setRootViewController:tabBarCtrl];
-    
+   // [window setRootViewController:tabBarCtrl];
+    [window switchRootviewCtrl];
     
     
     
