@@ -23,13 +23,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    //解档
-//    LBLAccount *account = [LBLAccountTool account];
-//    
-//    if (account) {
-//        
-//    }
-    
+      
     
     
     
